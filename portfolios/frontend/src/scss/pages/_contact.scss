@@ -1,0 +1,18 @@
+// Abstracts
+@use '../abstracts' as *;
+
+/* ======== */
+/* CONTACT CSS */
+/* ======== */
+
+.section{
+    &.contact-section-1{
+        h1,
+        h2,
+        h3,
+        p{
+            color: ss-var($colors, neutral, 'white');
+        }
+    }
+
+}

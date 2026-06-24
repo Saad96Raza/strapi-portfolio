@@ -1,0 +1,29 @@
+// Abstracts
+@use '../abstracts/' as *;
+
+/* ========= */
+/* Font Face */
+/* ========= */
+
+/* Thin */
+@include font-face($font-name, "../fonts/raleway/Raleway-Thin-100", 100, "normal", woff2 woff ttf);
+/* Extralight */
+@include font-face($font-name, "../fonts/raleway/Raleway-Extralight-200", 200, "normal", woff2 woff ttf);
+/* Light */
+@include font-face($font-name, "../fonts/raleway/Raleway-Light-300", 300, "normal", woff2 woff ttf);
+/* Regular */
+@include font-face($font-name, "../fonts/raleway/Raleway-Regular-400", 400, "normal", woff2 woff ttf);
+/* Medium */
+@include font-face($font-name, "../fonts/raleway/Raleway-Medium-500", 500, "normal", woff2 woff ttf);
+/* Semibold */
+@include font-face($font-name, "../fonts/raleway/Raleway-Semibold-600", 600, "normal", woff2 woff ttf);
+/* Bold */
+@include font-face($font-name, "../fonts/raleway/Raleway-Bold-700", 700, "normal", woff2 woff ttf);
+/* Extrabold */
+@include font-face($font-name, "../fonts/raleway/Raleway-Extrabold-800", 800, "normal", woff2 woff ttf);
+/* Blackbold */
+@include font-face($font-name, "../fonts/raleway/Raleway-Black-900", 900, "normal", woff2 woff ttf);
+
+@include font-face($font-krona, "../fonts/krona-one/KronaOne-Regular", 900, "normal", ttf);
+
+@include font-face($font-sussie, "../fonts/sussie/SuisseIntl-Light", 500, "normal", ttf);

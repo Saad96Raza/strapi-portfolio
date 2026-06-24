@@ -1,0 +1,24 @@
+// Abstracts
+@use '../abstracts' as *;
+
+/* Footer */
+
+footer{
+    .sm-font,
+    .body,
+    .heighlight,   
+    .link,
+    i{
+        color: ss-var($colors,neutral,'white');
+    }
+    .footer-top{
+        .input{
+            .footer-submit{
+                border: rem(1) solid ss-var($colors,neutral,'white') ;
+                padding: 0 rem(28);
+                border-radius: rem(50);
+                
+            }
+        }
+    }
+}

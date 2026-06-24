@@ -1,0 +1,20 @@
+// Abstracts
+@use '../abstracts' as *;
+
+/* Header */
+
+.header{
+    .logo{
+        img{
+            width: auto;
+            max-height: rem(120);
+        }
+    }
+    .nav{
+        li{
+            a{
+                color: ss-var($colors,neutral,'white');
+            }
+        }
+    }
+}

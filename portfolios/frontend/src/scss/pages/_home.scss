@@ -1,0 +1,64 @@
+// Abstracts
+@use '../abstracts' as *;
+
+/* ======== */
+/* Home CSS */
+/* ======== */
+
+.section{
+   
+    &.home-section-1{
+        h1,
+        h2,
+        h3,
+        p{
+            color: ss-var($colors, neutral, 'white');
+        }
+        
+        .marquee{
+            transform: rotate(-1.4deg);
+            .marquee-item{
+                .marquee-items{
+                    img{
+                        width:rem(500);
+                        height: auto;
+                        
+                    }
+
+                }
+                
+            }
+            
+        }
+    }
+
+    &.home-section-3{    
+        .features-wrapper{
+            position: relative;
+           &::before {
+                content: '';
+                position: absolute;
+                top: 50%;      
+                left: 0;
+                right: 0;
+                height: 0;       
+                transition: all 0.5s ease;
+                z-index: -1;     
+            }
+            &:hover::before {
+                top: 0;                      
+                height: 100%;         
+                background: ss-var($colors, neutral, 'white');
+            }               
+            h2,
+            h3,
+            p{
+                color: ss-var($colors,neutral,'white');
+                overflow-wrap: break-word;
+                white-space: pre-line;
+                mix-blend-mode: difference;
+
+            }
+        }      
+    }
+}

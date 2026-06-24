@@ -1,0 +1,33 @@
+// Abstracts
+@use '../abstracts/' as *;
+
+/* Buttons */
+
+
+
+.primary-button{
+  @include primary-button(
+    rem(24),
+    rem(64),
+    ss-var($colors,neutral,'black'),
+    ss-var($colors,primary,'primary1'),
+    ss-var($colors,primary,'primary1'),
+    ss-var($colors,neutral,'white'),
+    ss-var($colors,neutral,'white'),
+    ss-var($colors,neutral,'white')
+  )   
+}
+
+.primary-button-textless{
+  @include primary-button(
+    rem(24),
+    rem(30),
+    ss-var($colors,neutral,'black'),
+    ss-var($colors,primary,'primary1'),
+    ss-var($colors,primary,'primary1'),
+    ss-var($colors,neutral,'white'),
+    ss-var($colors,neutral,'white'),
+    ss-var($colors,neutral,'white')
+  )   
+}
+
